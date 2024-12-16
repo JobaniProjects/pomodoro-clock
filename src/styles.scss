@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+$clock-gradient-1: #ffe900;
+$clock-gradient-2: #ffc100;
+
+body{
+    // background-color: lightgreen;
+    background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+    // min-width:100vw;
+    
+    min-height:83vh; //83
+    font-family:Lato;
+}
+
+.lato-font{
+    font-family: Lato;
+}
+
+.pomodoro-clock-container{
+    width: 480px;
+    height:420px;
+    background: linear-gradient(to left bottom, $clock-gradient-1,$clock-gradient-2, $clock-gradient-1);
+    border-radius: 10px;
+    border: 4px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:90px;
+
+}
+
+#time-left{
+    font-size: 50px;
+}
+
+.timerLabel-text-size{
+    font-size: 25px;
+    
+}
+
+.timer-container{
+    margin-top:50px;
+}
+
+.title{
+    text-align: center;
+}
+
+#break-label, #session-label{
+    display: inline-block;
+}
+
+#break-label{
+    margin-left:80px;
+}
+
+#session-label{
+    margin-left:110px;
+    
+}
+
+.length-adjust-container{
+    text-align: center;
+}
+
+.arrow-size{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#break-decrement, #break-length, #break-increment, #session-decrement, #session-length, #session-increment{
+    display: inline-block;
+}
+
+#timer-label{
+    width:250px;
+    height:200px;
+    background-color:turquoise;
+    border-radius: 100px;
+    text-align: center;
+    border:5px solid white;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.start-stop-reset-btns{
+    display: inline-block;
+    cursor:pointer;
+}
+
+.timeButtonsContainer{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    // cursor: pointer;
+}
+
+#break-length, #session-length{
+    user-select: none;
+}
